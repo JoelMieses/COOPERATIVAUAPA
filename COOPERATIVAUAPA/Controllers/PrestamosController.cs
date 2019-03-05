@@ -156,5 +156,7 @@ namespace COOPERATIVAUAPA.Controllers
         {
             return _context.Prestamos.Any(e => e.IdPrestamos == id);
         }
+
+
     }
 }

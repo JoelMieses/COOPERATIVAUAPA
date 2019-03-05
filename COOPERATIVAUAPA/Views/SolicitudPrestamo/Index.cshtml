@@ -1,0 +1,243 @@
+﻿@model IEnumerable<COOPERATIVAUAPA.Models.SolicitudPrestamos>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Fecha)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            @*<th>
+            @Html.DisplayNameFor(model => model.PrimerApellido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SegundoApellido)
+        </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.NumeroIdentificacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sexo)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.FechaNacimiento)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.Nacionalidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstadoCivil)
+            </th>
+            @*<th>
+            @Html.DisplayNameFor(model => model.Direccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TelefonoResidencia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CelularPersonal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NombreConyugue)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ParienteCercano)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Parentesco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TelefonoContactoPariente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DireccionPariente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OtroTelefonoContacto)
+        </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GaranteNombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GarantePrimerApellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GaranteSegundoApellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GaranteNumeroIdentificacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GaranteSexo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GaranteFechaNacimiento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GaranteNacionalidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GaranteEstadoCivil)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GaranteDireccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GaranteTelefonoResidencia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GaranteCelularPersonal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GaranteEmail)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.Monto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DuracionMeses)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tasa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoPrestamo)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fecha)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre) @Html.DisplayFor(modelItem => item.PrimerApellido) @Html.DisplayFor(modelItem => item.SegundoApellido)
+            </td>
+   
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroIdentificacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sexo)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.FechaNacimiento)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Nacionalidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EstadoCivil)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.Direccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelefonoResidencia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CelularPersonal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreConyugue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ParienteCercano)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Parentesco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelefonoContactoPariente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DireccionPariente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OtroTelefonoContacto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GaranteNombre)  @Html.DisplayFor(modelItem => item.GarantePrimerApellido)  @Html.DisplayFor(modelItem => item.GaranteSegundoApellido)
+            </td>
+            <td>
+               
+            </td>
+            <td>
+               
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GaranteNumeroIdentificacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GaranteSexo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GaranteFechaNacimiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GaranteNacionalidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GaranteEstadoCivil)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GaranteDireccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GaranteTelefonoResidencia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GaranteCelularPersonal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GaranteEmail)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Monto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DuracionMeses)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tasa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estatus.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoPrestamo.Nombre)
+            </td>
+            @if(item.EstatusId == 1) { 
+                <td>
+                    <a class="btn btn-success" asp-action="Aprobacion" asp-route-id="@item.Id" asp-route-decision="true">Aprobar</a> 
+                    <a class="btn btn-danger" asp-action="Aprobacion" asp-route-id="@item.Id" asp-route-decision="false">Rechazar</a> 
+                
+                </td>
+            }
+        </tr>
+}
+    </tbody>
+</table>
