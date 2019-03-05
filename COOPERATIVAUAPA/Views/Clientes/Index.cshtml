@@ -1,0 +1,138 @@
+﻿@model IEnumerable<COOPERATIVAUAPA.Models.Clientes>
+
+@{
+    ViewData["Title"] = "Clientes";
+}
+
+<h1>Registro de clientes</h1>
+
+<p>
+    <a asp-action="Create">Registrar clientes</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrimerApellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SegundoApellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumeroIdentificacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sexo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaNacimiento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nacionalidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstadoCivil)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Direccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TelefonoResidencia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CelularPersonal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreConyugue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ParienteCercano)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Parentesco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TelefonoContactoPariente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DireccionPariente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OtroTelefonoContacto)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrimerApellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SegundoApellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroIdentificacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sexo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaNacimiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nacionalidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EstadoCivil)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Direccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelefonoResidencia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CelularPersonal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreConyugue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ParienteCercano)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Parentesco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelefonoContactoPariente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DireccionPariente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OtroTelefonoContacto)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdCliente">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdCliente">Detalle</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdCliente">Eliminar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

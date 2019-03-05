@@ -1,0 +1,51 @@
+﻿@model IEnumerable<COOPERATIVAUAPA.Models.Prestamos>
+
+@{
+    ViewData["Title"] = "Préstamos";
+}
+
+<p>
+    <a asp-action="Create">Registrar préstamo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Capital)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TasaInteres)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Periodo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Clientes)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Capital)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TasaInteres)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Periodo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Clientes.CelularPersonal)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdPrestamos">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdPrestamos">Detalle</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdPrestamos">Eliminar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

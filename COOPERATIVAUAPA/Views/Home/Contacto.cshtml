@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Contacto";
+
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="well well-sm">
+                <form class="form-horizontal" method="post">
+                    <fieldset>
+                        <legend class="header">Contacto</legend>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"></span>
+                            <div class="col-md-12">
+                                <input id="fname" name="name" type="text" placeholder="Nombres" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"></span>
+                            <div class="col-md-12">
+                                <input id="lname" name="name" type="text" placeholder="Apellidos" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"></span>
+                            <div class="col-md-12">
+                                <input id="email" name="email" type="text" placeholder="Correo" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                            <div class="col-md-12">
+                                <input id="phone" name="phone" type="text" placeholder="Teléfono" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                            <div class="col-md-12">
+                                <textarea class="form-control" id="message" name="message" placeholder="Déjanos tu comentario aquí para contactarnos" rows="7"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4 mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.6814527838224!2d-70.674614085618!3d19.426164745921437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb1cf0bcd591469%3A0xa2db20e45ebcd6c9!2sUniversidad+Abierta+Para+Adultos!5e0!3m2!1ses-419!2sdo!4v1551736077240" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>

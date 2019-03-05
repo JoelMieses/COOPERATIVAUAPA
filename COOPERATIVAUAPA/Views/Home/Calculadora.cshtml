@@ -1,0 +1,111 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="container">
+    <div>
+        <div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="control-label" for="email"><strong>CALCULADORA DE PRESTAMOS</strong></label>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-right">
+                                <div class="form-group">
+                                    <label class="control-label" for="email">TIPO DE PRÉSTAMO :</label>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <asp:DropDownList ID="dldTipo" CssClass="form-control" runat="server">
+                                        <asp:ListItem Value="2">Seleccione Préstamo</asp:ListItem>
+                                        <asp:ListItem Value="1">Hipotecario</asp:ListItem>
+                                        <asp:ListItem Value="1">Vehiculo</asp:ListItem>
+                                        <asp:ListItem Value="1">Personal</asp:ListItem>
+                                    </asp:DropDownList>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-right">
+                                <div class="form-group">
+                                    <label class="control-label" for="email">TIPO DE MEMBRESÍA :</label>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <asp:DropDownList ID="DropDownList1" CssClass="form-control" runat="server">
+                                        <asp:ListItem Value="2">Seleccione Membresia</asp:ListItem>
+                                        <asp:ListItem Value="1">A</asp:ListItem>
+                                        <asp:ListItem Value="3">B</asp:ListItem>
+                                        <asp:ListItem Value="4">C</asp:ListItem>
+                                    </asp:DropDownList>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-right">
+                                <div class="form-group">
+                                    <label class="control-label" for="email">TASA DE INTERÉS (%) :</label>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <asp:TextBox ID="TextBox2" CssClass="form-control" placeholder="0%" runat="server"></asp:TextBox>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-right">
+                                <div class="form-group">
+                                    <label class="control-label" for="email">MONTO DEL PRÉSTAMO :</label>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <asp:TextBox ID="TextBox3" CssClass="form-control" placeholder="RD$ 0.00" runat="server"></asp:TextBox>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-right">
+                                <div class="form-group">
+                                    <label class="control-label" for="email"># DE MESES PARA PAGAR :</label>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <asp:TextBox ID="TextBox4" CssClass="form-control" placeholder="0" runat="server"></asp:TextBox>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-right">
+                                <div class="form-group">
+                                    <label class="control-label" for="email">FECHA INICIAL :</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <asp:TextBox ID="TxtFecha" CssClass="form-control input-md" runat="server"></asp:TextBox>
+                                </div>
+
+                                <script>
+                                            $('#TxtFecha').datepicker({
+                                                uiLibrary: 'bootstrap'
+                                            });
+                                </script>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <label class="control-label" for=""></label>
+                                    <button type="button" class="btn btn-success form-control">Calcular</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -3,3 +3,6 @@
 ################################################################################
 
 /COOPERATIVAUAPA/bin/Debug/netcoreapp2.2
+/COOPERATIVAUAPA/Migrations
+/COOPERATIVAUAPA/obj
+/.vs

@@ -1,0 +1,126 @@
+﻿@model COOPERATIVAUAPA.Models.Clientes
+
+@{
+    ViewData["Title"] = "Detalle";
+}
+
+<h1>Detalle clientes</h1>
+
+<div>
+    <h4>Clientes</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PrimerApellido)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PrimerApellido)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SegundoApellido)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SegundoApellido)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NumeroIdentificacion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NumeroIdentificacion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Sexo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Sexo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FechaNacimiento)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FechaNacimiento)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nacionalidad)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nacionalidad)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EstadoCivil)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EstadoCivil)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Direccion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Direccion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TelefonoResidencia)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TelefonoResidencia)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CelularPersonal)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CelularPersonal)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NombreConyugue)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NombreConyugue)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ParienteCercano)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ParienteCercano)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Parentesco)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Parentesco)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TelefonoContactoPariente)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TelefonoContactoPariente)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DireccionPariente)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DireccionPariente)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OtroTelefonoContacto)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OtroTelefonoContacto)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdCliente">Edit</a> |
+    <a asp-action="Index">Volver atrás</a>
+</div>
